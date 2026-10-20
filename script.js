@@ -144,26 +144,82 @@ console.log("bom")
     console.log("Insuficiente")
 }
 
-// 06 — Dia da semana-Receba um número inteiro de 1 a 7 e exiba o dia da semana correspondente. Considere **1 como domingo** e **7 como sábado**. Para qualquer outro número, exiba "Dia inválido".
+let idadedirigir= 19;
+let temCNH=true;
+let temcarro=false;
+if(idadedirigir>= 18 && temCNH== true && temcarro==true){
+    console.log("Você pode dirigir!")
 
-const data = 7
-
-if (data ==1){
-    console.log("segunda")
-    
-}else if(data==2){
-    console.log("terça")
-}else if(data==3){
-    console.log("quarta")
-}else if(data==4){
-    console.log("quinta")
-}else if(data==5){
-    console.log("sexta")
-}else if(data==6){
-    console.log("sábado")
-}else if(data==7){
-    console.log("domingo")
+}else{
+    console.log("Você não pode dirigir!")
 }
+
+let ehprofessor = false;
+let ehaluno= false;
+
+if(ehprofessor==true || ehaluno==true){
+    console.log("Você tem direito a meia-entrada!")
+}else{
+    console.log("Você não tem direito a meia-entrada!")
+}
+
+//&&=e
+//||=ou
+
+
+//01 — Receba um número e informe se ele está entre 10 e 50, inclusive. Caso contrário, informe que está fora do intervalo.
+
+let numero001= 78;
+if(numero001> 10 && numero001 < 50){
+    console.log("numero dentro do intervalo");
+
+}else{
+    console.log("numero fora do intervalo");
+}
+
+//02 — Uma oportunidade de estágio é destinada a candidatos com idade entre 16 e 24 anos, inclusive. Receba a idade e informe se o candidato atende ao requisito.
+
+const idadecandidato=17;
+if(idadecandidato> 16 && idadecandidato < 24){
+    console.log("Atende aos requisitos!")
+}else{
+    console.log("Não atende aos requisitos da vaga!")
+}
+
+//03 — Uma loja oferece frete grátis para clientes que realizam compras de R$ 200 ou mais ou que são assinantes. Receba o valor da compra e uma variável booleana indicando se o cliente é assinante. Informe se ele tem direito ao frete grátis.
+
+let valorcompra=152;
+let ehassinante=true;
+if(valorcompra>=200 || ehassinante==true){
+
+    console.log("Você tem o direito a frete gratis!");
+}else{
+    console.log("Você não tem direito a frete gratis!");
+}
+
+//04 — Receba o nome de um dia da semana. Se for sábado ou domingo, exiba "Fim de semana". Caso contrário, exiba "Dia útil".
+
+const dia= "quinta";
+if(dia== "sabado"|| dia=="domingo"){
+console.log("fim de semana");
+}else{
+    console.log("dia util");
+}
+
+//05 —Uma loja aplica 15% de desconto se o cliente:
+//Realizar uma compra de R$ 150 ou mais e for assinante; ou
+//Possuir um cupom promocional válido, independentemente de ser assinante.
+//Receba o valor da compra e duas variáveis booleanas (assinante e cupom válido). Informe se o desconto será aplicado e apresente o total final.
+
+let compraDesconto= 170;
+let assinante= true;
+if(compraDesconto>=150 || assinante==true){
+    console.log("Desconto se aplica")
+
+}else{
+    console.log("Desconto não se aplica")
+}
+
 
 
 
